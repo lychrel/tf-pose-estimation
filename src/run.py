@@ -43,9 +43,9 @@ if __name__ == '__main__':
     logger.info('inference image: %s in %.4f seconds.' % (args.image, elapsed))
 
     image = TfPoseEstimator.draw_humans(image, humans, imgcopy=False)
-    # cv2.imshow('tf-pose-estimation result', image)
+    cv2.imshow('tf-pose-estimation result', image)
     # cv2.waitKey()
-
+"""
     import matplotlib.pyplot as plt
 
     fig = plt.figure()
@@ -105,5 +105,5 @@ if __name__ == '__main__':
     for i, single_3d in enumerate(pose_3d):
         plot_pose(single_3d)
     plt.show()
-
+"""
     pass
